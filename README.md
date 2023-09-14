@@ -4,6 +4,8 @@
 
 - Modify your `vite-config.js` file with aliases.
 
+  
+#### `vite-config.js`
 ```javascript
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
