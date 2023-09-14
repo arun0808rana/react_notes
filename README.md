@@ -2,6 +2,8 @@
 
 ### Absolute Path Instructions
 
+- Modify your `vite-config.js` file with aliases.
+
 ```javascript
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
