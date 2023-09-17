@@ -22,3 +22,12 @@ export default defineConfig({
   },
 });
 ```
+
+### Emmet for className={styles.foo} instead of className="foo"
+
+```jsx
+..foo
+#or
+
+input..foo
+```
