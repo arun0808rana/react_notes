@@ -25,9 +25,29 @@ export default defineConfig({
 
 ### Emmet for className={styles.foo} instead of className="foo"
 
+#### Pre-requisite
+
+..foo expands to styleNam={styles.foo}. To make it className={styles.foo} you have to add the following config to settings.json at root level of your json. To open settings.json, press ctrl+, or you can navigate File > Preferences > Settings in vscode. There at top right corner there is an icon to open settings.json file.
+
+```javascript
+"emmet.syntaxProfiles": {
+    "jsx": {
+        "markup.attributes": {
+            "class*": "className",
+        },
+        "markup.valuePrefix": {
+            "class*": "styles"
+        }
+    }
+}
+```
+
+
 ```jsx
 ..foo
 #or
 
 input..foo
 ```
+
+Source: https://code.visualstudio.com/updates/v1_80#_improved-emmet-support-for-css-modules-in-jsxtsx
